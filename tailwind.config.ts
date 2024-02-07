@@ -9,19 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "rgb(var(--bg-color))",
-        primary: "rgb(var(--primary-color))",
-        secondary: "rgb(var(--secondary-color))",
-        accent: "rgb(var(--accent-color))",
-        text:  "rgb(var(--text-color))",
-        textsecondary: "rgb(var(--text-secondary-color))",
-        gradient: "rgb(var(--gradient-color))", 
-        servicebox: "rgb(var(--service-box-color))"
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        background: '#050608',
+        primary: "#7A40FF",
+        secondary: "#240767",
+        accent: "#FF554C",
+        text:  "#EEEDEF",
+        textsecondary: "#6B6B6B",
+        gradient: "#1B0354", 
+        servicebox: "#0F0F0F"
       },
     },
   },

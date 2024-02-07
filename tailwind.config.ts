@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        background: "rgb(var(--bg-color))",
+        primary: "rgb(var(--primary-color))",
+        secondary: "rgb(var(--secondary-color))",
+        accent: "rgb(var(--accent-color))",
+        text:  "rgb(var(--text-color))",
+        textsecondary: "rgb(var(--text-secondary-color))",
+        gradient: "rgb(var(--gradient-color))", 
+        servicebox: "rgb(var(--service-box-color))"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

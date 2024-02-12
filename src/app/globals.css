@@ -119,13 +119,6 @@ body {
 
 /* Botão Whatsapp */
 
-:root {
-  --size-default: 22px;
-  --size-sm: 16px;
-  --color-green: #58DD93;
-  --color-black: #000;
-}
-
 @property --angle {
   syntax: "<angle>";
 	initial-value: 0deg;

@@ -76,15 +76,7 @@ const config: Config = {
       },
     },
   },
-  // plugins should be an array
-  plugins: [
-    // Importing "tailwindcss-animate" plugin
-    require("tailwindcss-animate"),
-    // Add other plugins here if needed
-    'postcss-import',
-    'tailwindcss/nesting',
-    'autoprefixer',
-  ],
 };
 
 export default config;
+

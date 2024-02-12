@@ -1,3 +1,262 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 220, 23.08%, 2.55%;
+    --foreground: 210 20% 98%;
+    --card: 220, 23.08%, 2.55%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220, 23.08%, 2.55%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 258.22, 100%, 62.55%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 258.13, 87.27%, 21.57%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 3.02, 100%, 64.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 258.22, 100%, 62.55%;
+    --radius: 0.5rem;
+  }  
+}
+
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Botão de CTA */
+
+.cta {
+  border-radius: 12px;
+  border: 1px solid #48515E;
+  background: #000;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 2;
+  padding-inline: calc(.5em + 80px) .5em;
+  padding-block: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+}
+.cta:before,
+.cta:after{
+  content:"";
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  translate: calc(80px - 100%);
+  transition: inherit;
+}  
+.cta:before {
+  background: #7A40FF;
+}
+.cta:after{
+  --r: calc(1lh/18);
+  background: repeating-linear-gradient(90deg,#7d7d7d 0,#ddd,#7d7d7d 50%) right/200%;
+  animation: b 1s linear infinite;
+  padding: calc(4*var(--r)) calc(6*var(--r));
+  clip-path: inset(0 0 0 calc(100% - 60px));
+  /* I can optimize the mask with less gradients but I did a fast implementation */
+  --m:/calc(50%/3) calc(2*var(--r)) repeat-x content-box
+    radial-gradient(var(--r) at var(--r),#000 70%,#0000 82%);
+  -webkit-mask:
+    calc(3*var(--r)) calc(0*var(--r)) var(--m),
+    calc(5*var(--r)) calc(0*var(--r)) var(--m),
+    calc(5*var(--r)) calc(2*var(--r)) var(--m),
+    calc(7*var(--r)) calc(2*var(--r)) var(--m),
+    calc(7*var(--r)) calc(4*var(--r)) var(--m),
+    calc(9*var(--r)) calc(4*var(--r)) var(--m),
+    calc(7*var(--r)) calc(6*var(--r)) var(--m),
+    calc(5*var(--r)) calc(6*var(--r)) var(--m),
+    calc(5*var(--r)) calc(8*var(--r)) var(--m),
+    calc(3*var(--r)) calc(8*var(--r)) var(--m);
+}
+@keyframes b {
+  to{background-position: left}
+}
+.cta:hover {
+  scale: 1.2;
+}
+.cta:hover:before,
+.cta:hover:after{
+  translate: 0;
+  clip-path: inset(0);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+    /*
+     the first try of the mask that works by need very precise value  
+    radial-gradient(#000 44%,#0000 48%)     
+      4px 1px/calc(1lh/9) calc(1lh/9) intersect,    
+    repeating-linear-gradient( 45deg,#0000 3% 11%,#000 0 16.6%)     
+      0 0   /100% 50.1% no-repeat add,    
+    repeating-linear-gradient(135deg,#0000 3% 11%,#000 0 16.6%)     
+      0 100%/100% 50% no-repeat;*/
+
+
+/* Botão Whatsapp */
+
+:root {
+  --size-default: 22px;
+  --size-sm: 16px;
+  --color-green: #58DD93;
+  --color-black: #000;
+}
+
+@property --angle {
+  syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@property --glowColor {
+  syntax: "<color>";
+	initial-value: #58DD93;
+}
+
+@keyframes rotate {
+  0% { --angle: 0deg; --glowColor: var(--color-green);}
+  100% { --angle: 360deg; --glowColor: var(--color-green);}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 136px;
+  height: 73px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: none;
+  background: none;
+  position: relative;
+  padding: 1px;
+  text-decoration: none;
+  transition: all .18s ease-in-out;
+  transform: translate3d(0,0,0);
+
+  &:after, &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(100px + 1.5px);
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: conic-gradient(
+      from var(--angle) at 50% 50%, 
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0) 33%,
+      var(--glowColor) 50%,
+      rgba(0,0,0,0) 66%,
+      rgba(0,0,0,0) 100%);
+    animation: rotate 2s infinite linear;
+  }
+  
+  &:before {
+    animation: rotate 2s infinite linear;
+    filter: blur(20px);
+  }
+
+  .btnInner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--size-sm) var(--size-default);
+    border-radius: 100px;
+    color: var(--color-green);
+    font-weight: 500;
+    font-size: 22px;
+    z-index: 1;
+    transition: all .18s ease;
+    background: rgba(#000,.3);
+    backdrop-filter: blur(40px);
+    backface-visibility: hidden;
+  }
+  
+
+  hover {
+    .btnInner  {
+      background: rgba(var(--color-green),.1);
+      color: lighten(var(--color-green),20%);  
+    }
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Box speech header */
+
+.wrapper {
+  padding: 10px;
+}
+
+.bubble {
+    position: relative;
+    background: white;
+    color: #999;
+    font-family: Arial;
+    font-size: 16px;
+    width: 205.53px;
+    height: 42px;
+    border-radius: 35px;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #fff transparent transparent;
+    bottom: -16px;
+    right: 80%;
+    margin-left: -10px;
+}
+
+.counter {
+  color: #FFF;
+  font-size: 196px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 18px; /* 9.184% */
+}

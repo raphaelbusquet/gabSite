@@ -4,6 +4,7 @@ import instagram from "./images/instagram.png"
 import behance from "./images/behance.png"
 import linkedin from "./images/linkedin.png"
 import heroImage from "./images/heroImage.png"
+import boxTextItem from "./images/boxTextItem.svg"
 
 export {
     logo,
@@ -12,4 +13,5 @@ export {
     behance,
     linkedin,
     heroImage,
+    boxTextItem,
 }

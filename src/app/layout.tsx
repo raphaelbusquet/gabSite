@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     'criador de sites',
     'criador de sites profissional',
     'melhor criador de sites',
-  ]
+  ],
 };
 
 export default function RootLayout({

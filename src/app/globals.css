@@ -258,3 +258,13 @@ body {
   font-weight: 100;
   line-height: 18px; /* 9.184% */
 }
+
+.circleBlur {
+  background: #6626FA;
+  width: 876px;
+  height: 883px;
+  top: -500px;
+  left: -600px;
+  filter: blur(344px);  
+  position: absolute;
+}

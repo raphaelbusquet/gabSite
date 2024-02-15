@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 
 // Images
-import { instagram, behance, linkedin, heroImage } from '@/assets';
+import { instagram, behance, linkedin, heroImage, fileIcon, socialsBackground } from '@/assets';
 
 const Hero = () => {
     const [ref, inView] = useInView(
@@ -15,46 +15,55 @@ const Hero = () => {
     )
   return (
     <SectionWrapper>
-        <div ref={ref} className='flex justify-between h-[1028px]'>
-            <div className='flex-col items-stretch w-[668px]'>
-                <div className='flex-col justify-center items-center text-center'>
-                    <h1 className='text-6xl font-extrabold m-10'>Bem vindo!</h1>
-                    <p className='text-muted-foreground text-justify ml-[28%] mb-10'>
-                        Olá, eu sou <span className='text-foreground'>Gabriel Busquet</span>, Web <br /> designer
-                        com +5 anos de <br />
-                        experiência no mercado.
-                    </p>
-                    <p className='text-muted-foreground text-justify ml-[28%] mb-10'>
-                        <span className='text-foreground'>
+        <div ref={ref} className='flex w-full h-[1028px] mt-[108px]'>
+            <div className='flex flex-col h-full w-[668px]'>
+                <div className='flex-col w-full h-[599px] justify-center items-center text-center'>
+                    <div className='flex flex-col max-h-full items-center'>
+                        <h1 className='text-6xl font-extrabold m-[74px]'>Bem vindo!</h1>
+                        <div className='w-[420px] h-[597px]'>
+                            <p className='pl-12 text-left font-normal text-[24px]'>
+                            Olá, eu sou Gabriel Busquet, Web designer
+                            com +5 anos de
+                            experiência no mercado.
+                            <br /><br />
                             Guio empresas
-                            e agências em <br />lançamentos digitais
-                        </span>, impulsionando <br /> vendas e guiando-os para
-                        alcançar <br />
-                        seu <span className='text-foreground'>potencial máximo</span>.
-                    </p>
-                </div>
-                <div>
-                    <div>
-                        <span className='mt-10 ml-12 text-muted-foreground'>Projetos entregues</span>
+                            e agências em lançamentos digitais, impulsionando vendas e guiando-os para
+                            alcançar
+                            seu potencial máximo.
+                            </p>
+                        </div>
                     </div>
-                    <div className='counter text-center'>
-                        {inView ? 
-                            <CountUp prefix='+' start={0} end={147} duration={4} /> : '147'}
+                </div> 
+                <div className='flex flex-col justify-between w-full h-[274px] font-thin'>
+                    <div className='flex items-end ml-[19px] mt-[27px] gap-[10px]'>
+                        <Image src={fileIcon} alt='file icon' />
+                        <span className='text-muted-foreground font-[16px]'>Projetos entregues</span>
+                    </div>
+                    <div className='w-full h-full flex items-center justify-center'>
+                        <div className='counter'>
+                            {inView ? 
+                                <CountUp className='lining-nums' prefix='+' start={0} end={147} duration={4} /> : '147'}
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div className='social'>
-                            <p>Estou por aqui também:</p>
+                <div className='flex w-full h-[155px]'>
+                    <div className='flex flex-col justify-evenly items-center w-[273px] social'>
+                            <div>
+                                <p>Estou por aqui também:</p>
+                            </div>
                             <div className='flex gap-[14px]'>
                                 <Image className='w-[48px] h-[48px]' src={instagram} alt='instagram' />
                                 <Image className='w-[48px] h-[48px]' src={behance} alt='behance' />
                                 <Image className='w-[48px] h-[48px]' src={linkedin} alt='linkedin' />
                             </div>
                     </div>
+                    <div>
+                        <Image src={socialsBackground} alt='background social medias' />
+                    </div>
                 </div>
             </div>
-            <div>
-                <Image className='w-[1024px] h-[924px] mr-[24px]' src={heroImage} alt='HeroImage' />
+            <div className='heroImage flex items-center w-[795px] h-full '>
+                <Image className='-right-[-24px] absolute w-[870px] h-[924px]' src={heroImage} alt='hero image' />
             </div>
         </div>
     </SectionWrapper>

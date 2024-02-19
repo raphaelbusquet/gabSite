@@ -52,9 +52,9 @@ const Hero = () => {
                                 <p>Estou por aqui também:</p>
                             </div>
                             <div className='flex gap-[14px]'>
-                                <Image className='w-[48px] h-[48px]' src={instagram} alt='instagram' />
-                                <Image className='w-[48px] h-[48px]' src={behance} alt='behance' />
-                                <Image className='w-[48px] h-[48px]' src={linkedin} alt='linkedin' />
+                                <Image className='w-12 h-[48px]' src={instagram} alt='instagram' />
+                                <Image className='w-12 h-[48px]' src={behance} alt='behance' />
+                                <Image className='w-12 h-[48px]' src={linkedin} alt='linkedin' />
                             </div>
                     </div>
                     <div>

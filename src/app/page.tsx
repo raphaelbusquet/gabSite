@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="h-[5867px] w-[1463px]">
+    <main className="h-[5186px] w-[1463px]">
       <div className="relative">
         <div className="line1"></div>
         <div className="line2"></div>

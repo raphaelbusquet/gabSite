@@ -12,7 +12,6 @@ export default function Home() {
         <div className="line5"></div>
         <div className="line6"></div>
         <div className="line7"></div>
-        <div className="line8"></div>
       </div>
       <div className="bubble flex justify-center items-center">
               <div className="wrapper">

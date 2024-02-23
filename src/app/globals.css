@@ -47,7 +47,7 @@
   content: '';
   position: absolute;
   display: block;
-  height: 3464px;
+  height: 2716px;
   width: 1px;
   background-color: #fff;
   top: 0;
@@ -58,15 +58,14 @@
   content: '';
   position: absolute;
   display: block;
-  height: 3464px;
+  height: 2716px;
   width: 1px;
   background-color: #fff;
-  top: 25px;
   left: 1463px;
   z-index: 10;
 }
 
-.line3::after{
+/* .line3::after{
   content: '';
   position: absolute;
   display: block;
@@ -76,7 +75,7 @@
   top: 0;
   left: 668px;
   z-index: 10;
-}
+} */
 
 .line4::after{
   content: '';
@@ -90,19 +89,7 @@
   z-index: 0;
 }
 
-.line5::after{
-  content: '';
-  position: absolute;
-  display: block;
-  height: 1px;
-  width: 2058px;
-  background-color: #fff;
-  top: 331px;
-  left: -301px;
-  z-index: 0;
-}
-
-.line6 {
+.line5 {
   content: '';
   position: absolute;
   display: block;
@@ -113,7 +100,7 @@
   z-index: 0;
 }
 
-.line7 {
+.line6 {
   content: '';
   position: absolute;
   display: block;
@@ -124,7 +111,7 @@
   z-index: 0;
 }
 
-.line8 {
+.line7 {
   content: '';
   position: absolute;
   display: block;
@@ -133,6 +120,14 @@
   background-color: #fff;
   top: 1359px;
   z-index: 0;
+}
+
+.logoSeparator {
+  width: 7px;
+  height: 32px;
+  border-radius: 50px;
+  border: 1px solid #EFEFEF;
+  background: #2A2445;
 }
 
 .whatsappHeaderButton {
@@ -147,13 +142,15 @@
 /* Botão de CTA */
 
 .cta {
+  width: 256.227px;
+  height: 44.204px;
   border-radius: 12px;
   border: 1px solid #48515eb3;
   background: #000;
   color: #fff;
-  font-size: 35px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 2;
+  line-height: normal;
   padding-inline: calc(.5em + 80px) .5em;
   padding-block: 0;
   padding-top: .2em;
@@ -328,31 +325,31 @@ body {
 /* Box speech header */
 
 .textBox {
-  font-family: Glancyr;
-  text-align: center;
   color: #FFF;
-  font-size: 17.438px;
-  font-weight: 500;
-  line-height: 18px; /* 103.226% */
-}
-
-.wrapper {
-  padding: 10px;
-  margin: 10px;
+  font-family: Glancyr;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .bubble {
     position: relative;
     background: #7A40FF;
     color: white;
-    font-family: Arial;
-    font-size: 16px;
-    width: 205.53px;
-    height: 42px;
+    font-family: Glancy;
+    font-size: 10px;
+    width: 96px;
+    height: 20px;
     border-radius: 35px;
-    right: -5%;
-    top: 137px;
+    left: 406px;
+    top: 14px;
     z-index: 2;
+}
+
+.boxTextSvg {
+  width: 9px;
+  height: 8px;
 }
 
 .counter {

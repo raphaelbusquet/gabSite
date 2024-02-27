@@ -14,7 +14,7 @@ const Header = () => {
               <span className='textBox'>Excelente dia!</span>
             </div>
           </div>
-          <div className="circleBlur -z-10"></div>
+          <div className="circleBlur1 -z-10"></div>
           <Image src={boxTextItem} alt="box text item" className="boxTextSvg left-[460px]  top-[45px] z-50 absolute" />
           <div className="w-[770px] h-[77px] flex justify-around items-center">
             <div  className="circularHeaderWrapper -z-20 w-[827px] h-[77px] bg-[#0A0C0F] rounded-full border absolute "></div>

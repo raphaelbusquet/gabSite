@@ -349,7 +349,7 @@ body {
   line-height: 18px; /* 9.184% */
 }
 
-.circleBlur {
+.circleBlur1 {
   background: #6626FA;
   width: 876px;
   height: 883px;
@@ -357,4 +357,47 @@ body {
   left: -600px;
   filter: blur(344px);  
   position: absolute;
+}
+
+.circleBlur2 {
+  border-radius: 641px;
+  background: rgba(102, 38, 250, 0.50);
+  filter: blur(195.75px);
+  width: 876px;
+  height: 883px;
+  top: 120px;
+  left: -400px;
+  filter: blur(344px);  
+  position: absolute;
+}
+
+.circleBlur3 {
+  border-radius: 883px;
+  background: rgba(254, 86, 78, 0.40);
+  filter: blur(344px);
+  width: 876px;
+  height: 883px;
+  top: 800px;
+  right: -40%;
+  filter: blur(344px);  
+  position: absolute;
+}
+
+.backgroundBlur {
+  background: rgba(0, 0, 0, 0.431);
+  backdrop-filter: blur(30px);
+}
+
+.objectIconServices1 {
+  position: absolute;
+  top: 10%;
+  right: -15%;
+  z-index: -10;
+}
+
+.objectIconServices2 {
+  position: absolute;
+  top: 22%;
+  left: -20%;
+  z-index: -10;
 }

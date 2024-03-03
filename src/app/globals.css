@@ -43,6 +43,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .line1::after{
   content: '';
   position: absolute;
@@ -128,16 +132,22 @@
   transition: .180s ease-in-out;
 }
 
+.triangule {
+  position: absolute;
+  top: 62%;
+  right: 11%;
+}
+
 /* Botão de CTA */
 
 .cta {
-  width: 256.227px;
-  height: 44.204px;
+  width: 252px;
+  height: 42px;
   border-radius: 12px;
   border: 1px solid #48515eb3;
   background: #000;
   color: #fff;
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-weight: 400;
   line-height: normal;
   padding-inline: calc(.5em + 75px); 

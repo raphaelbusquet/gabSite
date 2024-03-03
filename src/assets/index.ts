@@ -13,6 +13,9 @@ import scrollDownIcon from "./images/scrollDownIcon.svg"
 import arrowLink from "./images/arrowLink.svg"
 import objectIconServices1 from "./images/objectIconServices1.svg"
 import objectIconServices2 from "./images/objectIconServices2.svg"
+import triangule from "./images/triangule.svg"
+import itemLeftArrow from "./images/itemLeftArrow.svg"
+import listItemSvg from "./images/listItemSvg.svg"
 
 export {
     logo,
@@ -30,4 +33,7 @@ export {
     arrowLink,
     objectIconServices1,
     objectIconServices2,
+    triangule,
+    itemLeftArrow,
+    listItemSvg,
 }

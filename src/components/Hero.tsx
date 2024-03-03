@@ -7,12 +7,31 @@ import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 
 // Images
-import { instagram, behance, linkedin, heroImage, fileIcon, socialsBackground } from '@/assets';
+import { heroImage, fileIcon, triangule } from '@/assets';
 
 const Hero = () => {
     const [ref, inView] = useInView(
         {threshold: 0.5}
     )
+
+    window.addEventListener('scroll', () => {
+        // Captura a posição de rolagem vertical da página
+        const scrollTop: number = document.documentElement.scrollTop || document.body.scrollTop;
+        
+        // Seleciona o elemento a ser apontado
+        const followerTriangule: HTMLElement | null = document.getElementById('followerTriangule');
+        
+        // Verifica se o elemento apontador existe
+        if (followerTriangule) {
+          // Calcula a rotação com base na posição de rolagem
+          const tiltAmount: number = 40; // Define o quanto o elemento vai se inclinar
+          const rotation: number = (scrollTop / 650) * tiltAmount; // Ajuste o divisor para controlar a sensibilidade ao scroll
+          
+          // Aplica a rotação ao elemento
+          followerTriangule.style.transform = `rotate(${rotation}deg)`;
+        }
+      });
+
   return (
     <SectionWrapper>
         <div ref={ref} className='flex w-full h-[798px]'>
@@ -50,7 +69,10 @@ const Hero = () => {
                 </div>
             </div>
             <div className='heroImage flex items-center'>
-                <Image className='top-[0px] mt-[37px] right-[51px] absolute w-[832px] h-[729px]' src={heroImage} alt='hero image' />
+                <Image className='top-[0px] mt-[37px] right-[51px] absolute w-[832px] h-[729px] z-40' src={heroImage} alt='hero image' />
+            </div>
+            <div id='followerTriangule' className='z-50 triangule'>
+                <Image src={triangule} alt='triagule' /> 
             </div>
         </div>
     </SectionWrapper>

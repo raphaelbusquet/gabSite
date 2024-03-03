@@ -26,7 +26,7 @@ const Header = () => {
             <div className="logoSeparator"></div>
             <div className="w-[400px] h-[77px] flex justify-center gap-[32px] items-center">
                 <div>
-                  <button className="cta flex items-center text-nowrap">
+                  <button className="cta flex items-center text-nowrap mb-1">
                     <span className="pt-1 text-[16px]">Quero um projeto!</span>
                   </button>
                 </div>

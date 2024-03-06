@@ -14,6 +14,17 @@ import {
   
 
 const Services = () => {
+    
+    const openList = () => {
+        const showList = document.getElementById('showList');
+
+        if (showList?.style.display === 'flex') {
+            showList.style.display = 'none';
+        } else {
+            showList.style.display = 'flex';
+        }
+    };
+
   return (
     <SectionWrapper>
         <div id='services' className='w-full h-[1768px] flex flex-col items-center pt-16'>
@@ -63,10 +74,10 @@ const Services = () => {
                 </div>
             </div>
             <div className='flex flex-col items-center'>
-                <button className='my-[81px] w-[456px] h-[117px] rounded-[34px] bg-secondary'>
+                <button onClick={openList} className='my-[81px] w-[456px] h-[117px] rounded-[34px] bg-secondary'>
                     <span className='text-[24px] uppercase'>Serviços adicionais +</span>
                 </button>
-                <div className='backgroundBlur w-[1140px] h-[495px] flex flex-col items-center border border-primary rounded-[20px]'>
+                <div id='showList' className='hidden backgroundBlur w-[1140px] h-[495px] flex-col items-center border border-primary rounded-[20px]'>
                     <div className='flex items-center justify-center w-[1108px] h-[90px] mt-[19.5px] mb-[60px] rounded-[75px] bg-[#0F0F0F] text-lg'>
                         <h3 className='max-w-[600px] text-center    '>Temos uma equipe <span className='text-primary'>completa e qualificada</span> que está preparada para impulsionar o nosso serviço/negócio no digital.</h3>
                     </div>

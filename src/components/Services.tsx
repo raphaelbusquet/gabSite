@@ -3,7 +3,7 @@
 import { SectionWrapper } from '@/hoc'
 import Image from 'next/image'
 import Link from 'next/link'
-import { servicesIcon, arrowLink, objectIconServices1, objectIconServices2, itemLeftArrow } from "@/assets"
+import { servicesIcon, arrowLink, objectIconServices1, objectIconServices2, itemLeftArrow, metalObject } from "@/assets"
 import { motion } from 'framer-motion'
 import {
     Accordion,
@@ -54,27 +54,33 @@ const Services = () => {
                 <div className='backgroundBlur w-[456px] h-[564px] border border-[#7A40FF] rounded-[16px] flex flex-col justify-center pl-16 gap-4 text-left'>
                     <h2 className='text-3xl left-16'>Landing Page</h2>
                     <p className= 'w-[320px] text-zinc-400 mb-16'>Página web criada com o objetivo de <span className='text-white'>converter visitantes em leads ou clientes,</span> geralmente por meio de um formulário de contato ou botão de ação.</p>
-                    <Link href="#">
-                        <Image className='hover:text-3xl transition-all duration-75' src={arrowLink} alt='Link whatsapp' />
-                    </Link>
+                    <div className='w-[200px] hover:w-[300px] transition-all duration-150 bottom-32 absolute'>
+                        <Link href="#" >
+                            <Image src={arrowLink} alt='Link whatsapp' />
+                        </Link>
+                    </div>
                 </div>
                 <div className='backgroundBlur w-[456px] h-[564px] border border-[#7A40FF] rounded-[16px] flex flex-col justify-center pl-16 gap-4 text-left'>
                     <h2 className='text-3xl left-16'>Web Design</h2>
                     <p className= 'w-[320px] text-zinc-400 mb-4'>Esse serviço envolve a criação de uma <span className='text-white'>página web profissionaç e atraente</span> que represente a identidade e os valores da empresa, com foco na <span className='text-white'>apresentação de informações sobre a organização, seus produtos e serviços.</span></p>
-                    <Link href="#">
-                        <Image className='hover:text-3xl transition-all duration-75' src={arrowLink} alt='Link whatsapp' />
-                    </Link>
+                    <div className='w-[200px] hover:w-[300px] transition-all duration-150 bottom-32 absolute'>
+                        <Link href="#" >
+                            <Image src={arrowLink} alt='Link whatsapp' />
+                        </Link>
+                    </div>
                 </div>
                 <div className='backgroundBlur w-[456px] h-[564px] border border-[#7A40FF] rounded-[16px] flex flex-col justify-center pl-16 gap-4 text-left'>
                     <h2 className='text-3xl left-16'>Web Checkup</h2>
                     <p className= 'w-[320px] text-zinc-400 mb-4'>Esse serviço envolve a <span className='text-white'>análise e avaliação de um site existente</span>, com o objetivo de identificar problemas técnicos, de usabilidade, conteúdo e SEO, a fim de melhorar a experiência do usuário e aumenta a eficácia do site.</p>
-                    <Link href="#">
-                        <Image className='hover:text-3xl transition-all duration-75' src={arrowLink} alt='Link whatsapp' />
-                    </Link>
+                    <div className='w-[200px] hover:w-[300px] transition-all duration-150 bottom-32 absolute'>
+                        <Link href="#" >
+                            <Image src={arrowLink} alt='Link whatsapp' />
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className='flex flex-col items-center'>
-                <button onClick={openList} className='my-[81px] w-[456px] h-[117px] rounded-[34px] bg-secondary'>
+                <button onClick={openList} className='my-[81px] w-[456px] h-[117px] rounded-[34px] bg-secondary flex items-center justify-center pt-2 transition-all duration-150 hover:bg-[#240777]'>
                     <span className='text-[24px] uppercase'>Serviços adicionais +</span>
                 </button>
                 <div id='showList' className='hidden backgroundBlur w-[1140px] h-[495px] flex-col items-center border border-primary rounded-[20px]'>
@@ -118,6 +124,7 @@ const Services = () => {
             <div className="circleBlur3 -z-10"></div>
             <Image src={objectIconServices1} className='objectIconServices1' alt='Object Image Services 1' />
             <Image src={objectIconServices2} className='objectIconServices2' alt='Object Image Services 2' />
+            <Image src={metalObject} alt='Espiral' className='absolute bottom-[-400px] right-[-600px]'/>
         </div>
     </SectionWrapper>
   )

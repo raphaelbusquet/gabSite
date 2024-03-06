@@ -16,6 +16,8 @@ import objectIconServices2 from "./images/objectIconServices2.svg"
 import triangule from "./images/triangule.svg"
 import itemLeftArrow from "./images/itemLeftArrow.svg"
 import listItemSvg from "./images/listItemSvg.svg"
+import metalObject from "./images/metalObject.svg"
+import trianguleWorkProcess from "./images/trianguleWorkProcess.svg"
 
 export {
     logo,
@@ -36,4 +38,6 @@ export {
     triangule,
     itemLeftArrow,
     listItemSvg,
+    metalObject,
+    trianguleWorkProcess,
 }

@@ -66,7 +66,7 @@
   width: 1px;
   background-color: #fff;
   left: 1463px;
-  z-index: 10;
+  z-index: 0;
 }
 
 .line3::after{
@@ -211,15 +211,6 @@ body {
   display: grid;
   place-content: center;
 }
-
-    /*
-     the first try of the mask that works by need very precise value  
-    radial-gradient(#000 44%,#0000 48%)     
-      4px 1px/calc(1lh/9) calc(1lh/9) intersect,    
-    repeating-linear-gradient( 45deg,#0000 3% 11%,#000 0 16.6%)     
-      0 0   /100% 50.1% no-repeat add,    
-    repeating-linear-gradient(135deg,#0000 3% 11%,#000 0 16.6%)     
-      0 100%/100% 50% no-repeat;*/
 
 
 /* Botão Whatsapp */

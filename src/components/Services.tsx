@@ -124,7 +124,7 @@ const Services = () => {
             <div className="circleBlur3 -z-10"></div>
             <Image src={objectIconServices1} className='objectIconServices1' alt='Object Image Services 1' />
             <Image src={objectIconServices2} className='objectIconServices2' alt='Object Image Services 2' />
-            <Image src={metalObject} alt='Espiral' className='absolute bottom-[-400px] right-[-600px]'/>
+            <Image src={metalObject} alt='Espiral' className='absolute bottom-[-400px] right-[-600px] z-50'/>
         </div>
     </SectionWrapper>
   )

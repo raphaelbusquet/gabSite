@@ -37,7 +37,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="../../public/favicon.ico" />
       </head>
-      <body className={glancyr.className}>{children}</body>
+      <body className={glancyr.className}>{children}
+      </body>
     </html>
   );
 }

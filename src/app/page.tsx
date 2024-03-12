@@ -6,12 +6,10 @@ import WorkProcess from "@/components/WorkProcess";
 export default function Home() {
   return (
     <main>
-      <div>
-        <Header />
-        <Hero />
-        <Services />
-        <WorkProcess />
-      </div>
+      <Header />
+      <Hero />
+      <Services />
+      <WorkProcess />
     </main>
   ); 
 }

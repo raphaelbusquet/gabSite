@@ -68,7 +68,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='heroImage flex items-center'>
+            <div className='heroImage flex flex-1 items-center'>
                 <Image className='top-[0px] mt-[37px] right-[51px] absolute w-[832px] h-[729px] z-40' src={heroImage} alt='hero image' />
             </div>
             <div id='followerTriangule' className='z-50 triangule'>

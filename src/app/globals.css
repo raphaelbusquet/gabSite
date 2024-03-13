@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 * {
-  margin: auto;
-  padding: auto;
+  margin-inline: auto;
   scroll-behavior: smooth;
 }
 

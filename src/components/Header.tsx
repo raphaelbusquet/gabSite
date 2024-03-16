@@ -1,10 +1,45 @@
+'use client'
+
 import { SectionWrapper } from "@/hoc";
 import Image from "next/image";
 import { logo, whatsapp } from "@/assets";
 import Link from "next/link";
 import { boxTextItem } from "@/assets";
+import { useEffect } from 'react';
 
-const Header = () => {
+const Header: React.FC = () => {
+  useEffect(() => {
+    const updateGreetingText = () => {
+      // Make sure we're on the client side before accessing the document
+      if (typeof window !== 'undefined') {
+        const now = new Date();
+        const hour = now.getHours();
+
+        const greetingText = document.getElementById('greetingText');
+
+        if (greetingText) {
+          if (hour >= 6 && hour < 12) {
+            greetingText.textContent = 'Exelente dia!';
+          } else if (hour >= 12 && hour < 18) {
+            greetingText.textContent = 'Exelente tarde!';
+          } else {
+            greetingText.textContent = 'Exelente noite!';
+          }
+        }
+      }
+    };
+
+    // Call the function initially to set up the greeting text
+    updateGreetingText();
+
+    // Call the function every minute to update the text
+    const intervalId = setInterval(updateGreetingText, 1800000);
+
+    return () => {
+      clearInterval(intervalId); // Clear the range when disassembling the component
+    };
+  }, []);
+
   return (
     <SectionWrapper>
         <div className="h-[150px]">
@@ -23,7 +58,7 @@ const Header = () => {
                 <div className="absolute">
                   <div className="bubble flex justify-center items-center">
                     <div className="wrapper">
-                      <span className='textBox'>Excelente dia!</span>
+                      <span id="greetingText" className='textBox'>Excelente dia!</span>
                     </div>
                     <Image src={boxTextItem} alt="box text item" className="boxTextSvg left-[8px] top-[17px] absolute" />
                   </div>

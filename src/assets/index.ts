@@ -19,6 +19,7 @@ import listItemSvg from "./images/listItemSvg.svg"
 import metalObject from "./images/metalObject.svg"
 import trianguleWorkProcess from "./images/trianguleWorkProcess.svg"
 import workProcessItem from "./images/workProcessItem.svg"
+import adicionalServicesArrow from "./images/adicionalServicesArrow.svg"
 
 export {
     logo,
@@ -42,4 +43,5 @@ export {
     metalObject,
     trianguleWorkProcess,
     workProcessItem,
+    adicionalServicesArrow,
 }

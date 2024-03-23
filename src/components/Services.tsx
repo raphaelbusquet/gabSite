@@ -3,15 +3,8 @@
 import { SectionWrapper } from '@/hoc'
 import Image from 'next/image'
 import Link from 'next/link'
-import { servicesIcon, arrowLink, objectIconServices1, objectIconServices2, itemLeftArrow, metalObject } from "@/assets"
+import { servicesIcon, arrowLink, objectIconServices1, objectIconServices2, adicionalServicesArrow, metalObject } from "@/assets"
 import { motion } from 'framer-motion'
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
-  
 
 const Services = () => {
     
@@ -87,37 +80,53 @@ const Services = () => {
                     <div className='flex items-center justify-center w-[1108px] h-[90px] mt-[19.5px] mb-[60px] rounded-[75px] bg-[#0F0F0F] text-lg'>
                         <h3 className='max-w-[600px] text-center    '>Temos uma equipe <span className='text-primary'>completa e qualificada</span> que está preparada para impulsionar o nosso serviço/negócio no digital.</h3>
                     </div>
-                    <Accordion type='multiple' className='w-[960px] '>
-                        <AccordionItem value='item1' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Social Media:</h2></AccordionTrigger> <AccordionContent>Gerenciamento estratégico de postagens para redes sociais.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item2' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Web Design:</h2></AccordionTrigger> 
-                            <AccordionContent>Criação de interfaces digitais atrativas e funcionais para websites.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item3' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Programação:</h2></AccordionTrigger> <AccordionContent>Soluções digitais personaAccordionItemzadas e programação de sistemas. (Full Stack)</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item4' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Motion Design:</h2></AccordionTrigger> <AccordionContent>Animações e elementos visuais em movimento para vídeos e mídias digitais.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item5' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Tráfego Pago:</h2></AccordionTrigger> <AccordionContent>Anúncios de alta conversão utizando plataformas como o facebook e Google.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item6' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>3D Design:</h2></AccordionTrigger> <AccordionContent>Criação de elementos, mascotes, personagens e ambientes em três dimensões.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item7' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Ilustração:</h2></AccordionTrigger>
-                            <AccordionContent>Temos uma equipe completa e quaAccordionItemficada que vai impulsionar o seu negócio.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item8' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Diagramação:</h2></AccordionTrigger> <AccordionContent>Organização de elementos em peças gráficas, como revistas ou folhetos.</AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value='item9' className='flex items-center border-none h-8'>
-                            <AccordionTrigger className='text-primary'><h2 className='mt-2'>Edição de Vídeos:</h2></AccordionTrigger> <AccordionContent>Montagem de vídeos dinâmicos para conteúdos e intituições.</AccordionContent>
-                    </AccordionItem>
-                    </Accordion>
+                    <div className=''>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Social Media: </h3>
+                            <p>Gerenciamento estratégico de postagens para redes sociais.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Web Design:</h3>
+                            <p>Criação de interfaces digitais atrativas e funcionais para websites.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Programação:</h3>
+                            <p>Soluções digitais personalizadas e programação de sistemas. (Full Stack)</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Motion Design:</h3>
+                            <p>Animações e elementos visuais em movimento para vídeos e mídias digitais.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Tráfego pago:</h3>
+                            <p>Anúncios de alta conversão utilizando plataformas como o facebook e Google.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>3D Design:</h3>
+                            <p>Criação de elementos, mascotes, personagens e ambientes em três dimensões.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Ilustração:</h3>
+                            <p>Temos uma equipe completa e qualificada que vai impulsionar o seu negócio.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Diagramação:</h3>
+                            <p>Organização de elementos em peças gráficas, como revistas ou folhetos.</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            <h3>Edição de Vídeos:</h3>
+                            <p>Montagem de vídeos dinâmicos para conteúdos e intituições.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="circleBlur2 -z-10"></div>

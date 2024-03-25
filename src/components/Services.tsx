@@ -80,51 +80,69 @@ const Services = () => {
                     <div className='flex items-center justify-center w-[1108px] h-[90px] mt-[19.5px] mb-[60px] rounded-[75px] bg-[#0F0F0F] text-lg'>
                         <h3 className='max-w-[600px] text-center    '>Temos uma equipe <span className='text-primary'>completa e qualificada</span> que está preparada para impulsionar o nosso serviço/negócio no digital.</h3>
                     </div>
-                    <div className=''>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Social Media: </h3>
-                            <p>Gerenciamento estratégico de postagens para redes sociais.</p>
+                    <div className='w-full pb-6'>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className='m-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Social Media: </h3>
+                            <p className='text-xl'>Gerenciamento estratégico de postagens para redes sociais.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Web Design:</h3>
-                            <p>Criação de interfaces digitais atrativas e funcionais para websites.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Web Design:</h3>
+                            <p className='text-xl'>Criação de interfaces digitais atrativas e funcionais para websites.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Programação:</h3>
-                            <p>Soluções digitais personalizadas e programação de sistemas. (Full Stack)</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Programação:</h3>
+                            <p className='text-xl'>Soluções digitais personalizadas e programação de sistemas. (Full Stack)</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Motion Design:</h3>
-                            <p>Animações e elementos visuais em movimento para vídeos e mídias digitais.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Motion Design:</h3>
+                            <p className='text-xl'>Animações e elementos visuais em movimento para vídeos e mídias digitais.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Tráfego pago:</h3>
-                            <p>Anúncios de alta conversão utilizando plataformas como o facebook e Google.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Tráfego pago:</h3>
+                            <p className='text-xl'>Anúncios de alta conversão utilizando plataformas como o facebook e Google.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>3D Design:</h3>
-                            <p>Criação de elementos, mascotes, personagens e ambientes em três dimensões.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>3D Design:</h3>
+                            <p className='text-xl'>Criação de elementos, mascotes, personagens e ambientes em três dimensões.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Ilustração:</h3>
-                            <p>Temos uma equipe completa e qualificada que vai impulsionar o seu negócio.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Ilustração:</h3>
+                            <p className='text-xl'>Temos uma equipe completa e qualificada que vai impulsionar o seu negócio.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Diagramação:</h3>
-                            <p>Organização de elementos em peças gráficas, como revistas ou folhetos.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Diagramação:</h3>
+                            <p className='text-xl'>Organização de elementos em peças gráficas, como revistas ou folhetos.</p>
                         </div>
-                        <div className='flex gap-2'>
-                            <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
-                            <h3>Edição de Vídeos:</h3>
-                            <p>Montagem de vídeos dinâmicos para conteúdos e intituições.</p>
+                        <div className='flex items-start gap-2 mb-2 pl-16'>
+                            <div className= 'm-0'>
+                                <Image className='w-6 h-6' src={adicionalServicesArrow} alt='' />
+                            </div>
+                            <h3 className='text-primary text-xl'>Edição de Vídeos:</h3>
+                            <p className='text-xl'>Montagem de vídeos dinâmicos para conteúdos e intituições.</p>
                         </div>
                     </div>
                 </div>

@@ -20,6 +20,11 @@ import metalObject from "./images/metalObject.svg"
 import trianguleWorkProcess from "./images/trianguleWorkProcess.svg"
 import workProcessItem from "./images/workProcessItem.svg"
 import adicionalServicesArrow from "./images/adicionalServicesArrow.svg"
+import bigTriangule from "./images/bigTriangule.svg"
+import purpleBox from "./images/purpleBox.svg"
+import boxes from "./images/boxes.svg"
+import stacks from "./images/stacks.svg"
+import timer from "./images/timer.svg"
 
 export {
     logo,
@@ -44,4 +49,10 @@ export {
     trianguleWorkProcess,
     workProcessItem,
     adicionalServicesArrow,
+    bigTriangule,
+    purpleBox,
+    boxes,
+    stacks,
+    timer
+
 }

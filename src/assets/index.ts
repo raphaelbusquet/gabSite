@@ -25,6 +25,11 @@ import purpleBox from "./images/purpleBox.svg"
 import boxes from "./images/boxes.svg"
 import stacks from "./images/stacks.svg"
 import timer from "./images/timer.svg"
+import comercial from "./images/comercialSimbol.svg"
+import miniLogo from "./images/miniLogo.svg"
+import losango from "./images/losango.svg"
+import cilindro from "./images/cilindro.svg"
+import backgroundEstouPronto from "./images/backgroundEstouPronto.svg"
 
 export {
     logo,
@@ -53,6 +58,10 @@ export {
     purpleBox,
     boxes,
     stacks,
-    timer
-
+    timer,
+    comercial,
+    miniLogo,
+    losango,
+    cilindro,
+    backgroundEstouPronto
 }

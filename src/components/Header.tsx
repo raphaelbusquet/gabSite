@@ -1,11 +1,11 @@
 'use client'
 
-import { SectionWrapper } from "@/hoc";
 import Image from "next/image";
 import { logo, whatsapp } from "@/assets";
 import Link from "next/link";
 import { boxTextItem } from "@/assets";
 import { useEffect } from 'react';
+import { SectionWrapper } from "@/hoc";
 
 const Header: React.FC = () => {
   useEffect(() => {

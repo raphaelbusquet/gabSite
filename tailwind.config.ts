@@ -20,6 +20,9 @@ const config: Config = {
       },
     },
     extend: {
+      backgroundImage: {
+      'callToActionImage': "url('/images/backgroundEstouPronto.svg')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

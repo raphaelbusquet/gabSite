@@ -11,12 +11,15 @@ const Services = () => {
     const openList = () => {
         const showList = document.getElementById('showList');
 
-        if (showList?.style.display === 'flex') {
-            showList.style.display = 'none';
-        } else {
-            showList.style.display = 'flex';
+        if (showList) {
+            if (showList.style.display === 'flex') {
+                showList.style.display = 'none';
+            } else {
+                showList.style.display = 'flex';
+            }
         }
     };
+
 
   return (
     <SectionWrapper>

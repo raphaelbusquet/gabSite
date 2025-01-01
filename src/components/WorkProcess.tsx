@@ -16,24 +16,30 @@ const WorkProcess = () => {
   // Use useEffect hook to execute code after component is mounted
   useEffect(() => {
     let cards = document.querySelectorAll(".card");
-      let stackArea = document.querySelector(".stack-area");
+    let stackArea = document.querySelector(".stack-area");
 
-      function rotateCards() {
-        let angle = 0;
-        cards.forEach((card) => {
-          if (card.classList.contains("active")) {
-            card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`;
-          } else {
-            card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
-          }
-        });
-      }
+    function rotateCards() {
+      let angle = 0;
+      cards.forEach((card) => {
+        // Cast the card to HTMLElement to access the style property
+        const element = card as HTMLElement;
 
-      rotateCards();
+        if (element.classList.contains("active")) {
+          element.style.transform = `translate(-50%, -120vh) rotate(-48deg)`;
+        } else {
+          element.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+        }
+      });
+    }
 
+    rotateCards();
+
+    // Add non-null assertion to stackArea, telling TypeScript it's guaranteed to be non-null here
+    if (stackArea) {
       window.addEventListener("scroll", () => {
+        // Use the non-null assertion here
         let proportion =
-          stackArea.getBoundingClientRect().top / window.innerHeight;
+          (stackArea as HTMLElement).getBoundingClientRect().top / window.innerHeight;
         if (proportion <= 0) {
           let n = cards.length;
           let index = Math.ceil((proportion * n) / 2);
@@ -48,6 +54,7 @@ const WorkProcess = () => {
           rotateCards();
         }
       });
+    }
   }, []); // Empty dependency array ensures useEffect runs only once after initial render
 
   return (
@@ -77,6 +84,7 @@ const WorkProcess = () => {
             <div className="card rounded-[26px] w-[694px] h-[263px] bg-[#EEEDEF] flex flex-col gap-8 justify-center items-start text-justify pl-6">
               <h3 className="text-2xl text-primary">Desenvolvimento</h3>
               <p className="text-[22px] w-[540px] text-[#3A3A3A]">As entregas são feitas em &apos;blocos&apos;, garantindo a coerência. Alterações seguem o briefing e são solicitadas numa listagem para a aplicação simultânea, antes de reenviar a peça.</p>
+              
             </div>
             <div className="card rounded-[26px] w-[694px] h-[263px] bg-[#EEEDEF] flex flex-col gap-8 justify-center items-start text-justify pl-6">
               <h3 className="text-2xl text-primary">Prazos e Entrega</h3>

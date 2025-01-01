@@ -1,8 +1,8 @@
-import logo from "./images/logo.png"
-import whatsapp from "./images/Whatsapp.png"
-import instagram from "./images/instagram.png"
-import behance from "./images/behance.png"
-import linkedin from "./images/linkedin.png"
+import logo from "./images/logo.svg"
+import whatsapp from "./images/Whatsapp.svg"
+import instagram from "./images/instagram.svg"
+import behance from "./images/behance.svg"
+import linkedin from "./images/linkedin.svg"
 import heroImage from "./images/heroImage.svg"
 import boxTextItem from "./images/boxTextItem.svg"
 import asterisk from "./images/asterisk.svg"
@@ -25,6 +25,10 @@ import purpleBox from "./images/purpleBox.svg"
 import boxes from "./images/boxes.svg"
 import stacks from "./images/stacks.svg"
 import timer from "./images/timer.svg"
+import losango from "./images/losango.svg"
+import cilindro from "./images/cilindro.svg"
+import miniLogo from "./images/miniLogo.svg"
+import comercial from "./images/comercialSimbol.svg"
 
 export {
     logo,
@@ -53,6 +57,9 @@ export {
     purpleBox,
     boxes,
     stacks,
-    timer
-
+    timer,
+    losango,
+    cilindro,
+    comercial,
+    miniLogo
 }

@@ -374,6 +374,18 @@
   position: absolute;
 }
 
+.circleBlur4 {
+  border-radius: 641px;
+  background: rgb(37, 7, 105);
+  filter: blur(195.75px);
+  width: 876px;
+  left: 200px;
+  height: 883px;
+  filter: blur(344px);  
+  position: absolute;
+  z-index: -10;
+}
+
 .backgroundBlur {
   background: rgba(0, 0, 0, 0.431);
   backdrop-filter: blur(30px);

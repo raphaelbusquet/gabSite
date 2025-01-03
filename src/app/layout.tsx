@@ -3,7 +3,43 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const glancyr = localFont({
-   src: '../assets/fonts/Glancyr-regular.otf',
+  src: [
+    {
+      path: '../assets/fonts/Glancyr-thin.otf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Glancyr-extra-light.otf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Glancyr-light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Glancyr-regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Glancyr-medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Glancyr-semibold.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/Glancyr-bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -37,7 +73,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="../../public/favicon.ico" />
       </head>
-      <body className={glancyr.className}>{children}
+      <body className={glancyr.className}>
+        {children}
       </body>
     </html>
   );

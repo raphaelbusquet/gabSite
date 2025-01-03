@@ -10,8 +10,8 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-2 place-items-center">
-                <Image src={comercial} alt="comercial simbol"/>        
-                <p>2024 Busquet Design-Todos os direitos reservados</p>
+                <Image src={comercial} alt="comercial simbol"/>
+                <span className="!font-extralight">2024 Busquet Design-Todos os direitos reservados</span>
             </div>
                 
             <div className="flex gap-2">   

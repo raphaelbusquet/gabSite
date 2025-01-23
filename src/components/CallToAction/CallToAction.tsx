@@ -5,7 +5,7 @@ import ButtonCallToAction from "./ButtonCallToAction"
 
 const CallToAction = () => {
   return (
-    <SectionWrapper className="h-[922px]">
+    <SectionWrapper className="h-[922px] bg-callToActionImage">
       <main className="flex relative justify-center items-center h-full max-w-[1463px]">
         <div className="circleBlur4"></div>
         <Image className="z-10 absolute -left-10 scale-90" src={losango} alt="Losango"/>

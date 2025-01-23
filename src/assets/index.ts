@@ -61,5 +61,5 @@ export {
     losango,
     cilindro,
     comercial,
-    miniLogo
+    miniLogo,
 }

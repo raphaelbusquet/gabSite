@@ -1,5 +1,5 @@
 import logo from "./images/logo.svg"
-import whatsapp from "./images/Whatsapp.svg"
+import whatsapp from "./images/whatsapp.svg"
 import instagram from "./images/instagram.svg"
 import behance from "./images/behance.svg"
 import linkedin from "./images/linkedin.svg"

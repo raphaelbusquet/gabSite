@@ -1,9 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import { logo, whatsapp } from "@/assets";
+import { logo, whatsapp, boxTextItem } from "@/assets";
 import Link from "next/link";
-import { boxTextItem } from "@/assets";
 import { useEffect } from 'react';
 import { SectionWrapper } from "@/hoc";
 

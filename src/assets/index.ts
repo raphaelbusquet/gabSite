@@ -9,7 +9,6 @@ import asterisk from "./images/asterisk.svg"
 import fileIcon from "./images/fileIcon.svg"
 import socialsBackground from "./images/socialsBackground.svg"
 import servicesIcon from "./images/servicesIcon.svg"
-import scrollDownIcon from "./images/scrollDownIcon.svg"
 import arrowLink from "./images/arrowLink.svg"
 import objectIconServices1 from "./images/objectIconServices1.svg"
 import objectIconServices2 from "./images/objectIconServices2.svg"
@@ -42,7 +41,6 @@ export {
     fileIcon,
     socialsBackground,
     servicesIcon,
-    scrollDownIcon,
     arrowLink,
     objectIconServices1,
     objectIconServices2,

@@ -9,7 +9,7 @@ import { SectionWrapper } from "@/hoc";
 const Header: React.FC = () => {
   useEffect(() => {
     const updateGreetingText = () => {
-      // Make sure we're on the client side before accessing the document
+      
       if (typeof window !== 'undefined') {
         const now = new Date();
         const hour = now.getHours();

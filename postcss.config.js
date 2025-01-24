@@ -1,5 +1,5 @@
-// postcss.config.js
-module.exports = {
+/* eslint-disable import/no-anonymous-default-export */
+export default {
   plugins: {
     'postcss-import': {},
     'tailwindcss/nesting': 'postcss-nesting',

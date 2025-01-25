@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/hoc"
 import Image from "next/image"
-import { losango, cilindro } from "@/assets"
+import cilindro from "@/assets/images/cilindro.svg"
+import losango from "@/assets/images/losango.svg"
 import ButtonCallToAction from "./ButtonCallToAction"
 
 const CallToAction = () => {
